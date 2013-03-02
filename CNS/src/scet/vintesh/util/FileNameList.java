@@ -18,4 +18,12 @@ public class FileNameList {
     public static final String monoAlphabaticCipherD = folderName + "monoAlphabaticCipherD.txt";
     public static final String playFairE = folderName + "playFairE.txt";
     public static final String playFairD = folderName + "playFairD.txt";
+    public static final String hillCipherE = folderName + "hillCipherE.txt";
+    public static final String hillCipherD = folderName + "hillCipherD.txt";
+    public static final String vegenereCipherE = folderName + "vegenereCipherE.txt";
+    public static final String vegenereCipherD = folderName + "vegenereCipherD.txt";
+    public static final String autoKeyCipherE = folderName + "autoKeyCipherE.txt";
+    public static final String autoKeyCipherD = folderName + "autoKeyCipherD.txt";
+    public static final String railFenceE = folderName + "railFenceE.txt";
+    public static final String railFenceD = folderName + "railFenceD.txt";
 }

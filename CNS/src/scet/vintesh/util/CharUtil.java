@@ -69,4 +69,47 @@ public class CharUtil {
         }
         return newCharArray;
     }
+
+    /**
+     * Considering A/a = 00, B/b = 01 & so on upto Z/z = 25
+     *
+     * @param c - Of which you want to find the Index
+     * @return - The index euivalent in int.
+     */
+    public static int getIndex(char c) {
+        if (Character.isUpperCase(c)) {
+            return c - 65;
+        } else if (Character.isLowerCase(c)) {
+            return c - 97;
+        } else {
+            throw new IllegalStateException("The Character is not alphabetic");
+        }
+    }
+
+    public static char indexToChar(int eSum) {
+        eSum %= 26;
+        return (char) (eSum + 65);
+    }
+
+    /**
+     * Returns the Array which contains the Alphabet Letters only.
+     *
+     * @param inputData - Array from which letters to be filtered.
+     * @return - Array with only Alphabet Letters.
+     */
+    public static char[] removeExceptAlphabates(char[] inputData) {
+        ArrayList<Character> listToReturn = new ArrayList<Character>();
+        for (int i = 0; i < inputData.length; i++) {
+            if ((((int) inputData[i]) > 64 && ((int) inputData[i]) < 91)
+                    || (((int) inputData[i]) > 96 && ((int) inputData[i]) < 123)) {
+                listToReturn.add(new Character(inputData[i]));
+            }
+        }
+        char returnArray[] = new char[listToReturn.size()];
+        int i = 0;
+        for (Character character : listToReturn) {
+            returnArray[i++] = character.charValue();
+        }
+        return returnArray;
+    }
 }

@@ -13,12 +13,33 @@ import scet.vintesh.util.FileNameList;
  */
 public abstract class Cipher {
 
+    /**
+     * Preprocessing steps to be done in order to do the encryption.
+     */
     public abstract void preProcessing();
 
+    /**
+     * Simply Encrypt the Stream of data.
+     *
+     * @param encryptedData - Characters Stream to be encrypted
+     * @return - The Encrypted Data.
+     */
     public abstract char[] getDecryptedData(char[] encryptedData);
 
+    /**
+     * Simply Decrypt the Stream of data.
+     *
+     * @param inputData - Characters Stream to be decrypted
+     * @return - The Decrypted Data.
+     */
     public abstract char[] getEncryptedData(char[] inputData);
 
+    /**
+     * Common Method which performs the reading & writing of the files.
+     *
+     * @param encryptedFileName - FileName where encrypted Data will store.
+     * @param decrptedFileNamed - FileName where decrypted Data will store.
+     */
     public void performCiphering(String encryptedFileName, String decrptedFileNamed) {
         preProcessing();
         try {
