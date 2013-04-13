@@ -1,6 +1,8 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Implemented as Tutorial of Masters Program 
+ * M.E. - Computer Engineering 
+ * Network Security
+ * SCET, Surat
  */
 package scet.vintesh.ciphers;
 
@@ -56,7 +58,7 @@ public abstract class Cipher {
             encryptedData = FileHandler.readFile(encryptedFileName);
             System.out.println("Converting to PlainText...");
             char[] plainData = getDecryptedData(encryptedData);
-            System.out.println("CipherText is: EncryptedData: " + String.valueOf(plainData));
+            System.out.println("PlainText is: DecryptedData: " + String.valueOf(plainData));
             FileHandler.writeFile(decrptedFileNamed, plainData);
         } catch (Exception e) {
             System.out.println("From MonoAlphabatic Cipher: " + e);

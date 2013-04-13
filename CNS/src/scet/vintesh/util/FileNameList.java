@@ -1,6 +1,8 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Implemented as Tutorial of Masters Program 
+ * M.E. - Computer Engineering 
+ * Network Security
+ * SCET, Surat
  */
 package scet.vintesh.util;
 
@@ -26,4 +28,6 @@ public class FileNameList {
     public static final String autoKeyCipherD = folderName + "autoKeyCipherD.txt";
     public static final String railFenceE = folderName + "railFenceE.txt";
     public static final String railFenceD = folderName + "railFenceD.txt";
+    public static final String transPositionE = folderName + "transPositionE.txt";
+    public static final String transPositionD = folderName + "transPositionD.txt";
 }
