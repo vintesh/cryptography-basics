@@ -14,7 +14,7 @@ import scet.vintesh.util.FileNameList;
  *
  * @author Vintesh
  */
-public class MainEntryPoint {
+public class CipherMainEntryPoint {
 
     public static void main(String[] args) throws IOException {
         new CaesarCipher().performCiphering(FileNameList.caesarCipherE, FileNameList.caesarCipherD);
